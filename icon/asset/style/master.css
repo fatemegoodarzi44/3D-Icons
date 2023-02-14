@@ -1,0 +1,151 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(to top, rgba(65, 69, 70, 0.508), rgba(20, 20, 20, 0.547));
+            transform-style: preserve-3d;
+            padding-top: 300px;
+        }
+        .main{
+            width: 800px;
+            height: 200px;
+            margin: 0 auto;
+            position: relative;
+            transform: perspective(1000px) rotateX(49deg) rotateY(0deg) rotateZ(0deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform-style: preserve-3d; 
+        } 
+        .main>div{
+            width: 80px;
+            height: 80px;
+            margin: 0 30px;
+            transform-style: preserve-3d;
+            transform: rotate(316deg) skew(360deg);
+            position: relative;
+            }
+            .main>div>span{
+                
+                display: flex;
+                width: 80%;
+                height: 85%;
+                position: absolute;
+                background-color: rgba(98, 100, 101, 0.508);
+                left: 0px;
+                top: 10px;
+                opacity: 0;
+                box-shadow: none;
+                transition: 1s;
+                filter: blur(10px)
+            }
+        .main>div>a{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+            transform: translateZ(25px) ;
+            transform-style: preserve-3d;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            transition: 0.5s;
+            
+            
+
+        }
+        .main>div>a>i{
+            font-size: 35px;
+            color: black;
+        }
+        .main>div>a::before{
+            content: '';
+            position: absolute;
+            display: flex;
+            height: 100%;
+            width: 25px;
+            background-color: rgb(187, 187, 187);
+            top: 0;
+            left: -25px;
+            transform-origin: right;
+            transform: rotateY(-90deg);
+        }
+        .main>div>a::after{
+            content: '';
+            background-color: rgb(119, 119, 119);
+            display: flex;
+            position: absolute;
+            width: 100%;
+            height: 25px;
+            left: 0;
+            bottom: -25px;
+            transform-origin: top;
+            transform: rotateX(-90deg);
+
+        }
+        .main>div:hover{
+            box-shadow: none;
+        }
+        .main>div:hover>a{
+            transform:  translateZ(70px) ;
+            box-shadow: none;
+        }
+        .main>div:hover>a>i{
+            color: white;
+        }
+        .main>div:hover>span{
+            opacity: 1;
+            box-shadow: 0 0 30px rgb(64, 64, 64);
+            background-color: rgb(69, 69, 69);
+            border-radius: 8px;
+        }
+        .main>div:nth-of-type(1):hover>a{
+            background: #55acee;
+        }
+        .main>div:nth-of-type(1):hover>a::before{
+            background: #66bcff;
+        }
+        .main>div:nth-of-type(1):hover>a::after{
+            background: #2d658f;
+        }
+        .main>div:nth-of-type(2):hover>a{
+            background: #ea4c89;
+        }
+        .main>div:nth-of-type(2):hover>a::before{
+            background: #ff5d9b;
+        }
+        .main>div:nth-of-type(2):hover>a::after{
+            background: #aa3562;
+        }
+        .main>div:nth-of-type(3):hover>a{
+            background: #0077B5;
+        }
+        .main>div:nth-of-type(3):hover>a::before{
+            background: #018ad4;
+        }
+        .main>div:nth-of-type(3):hover>a::after{
+            background: #025887;
+        }
+        .main>div:nth-of-type(4):hover>a{
+            background: #dd4b39; 
+        }
+        .main>div:nth-of-type(4):hover>a::before{
+            background: #fa6551; 
+        }
+        .main>div:nth-of-type(4):hover>a::after{
+            background: #a83425; 
+        }
+        .main>div:nth-of-type(5):hover>a{
+            background: #3b5999; 
+        }
+        .main>div:nth-of-type(5):hover>a::before{
+            background: #6783c0; 
+        }
+        .main>div:nth-of-type(5):hover>a::after{
+            background: #112b63; 
+        }
